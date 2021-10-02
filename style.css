@@ -538,7 +538,7 @@ font-family: 'Righteous', cursive; */
 
   #mid-section {
     height: auto;
-    margin: 1rem 0.4rem;
+    margin: 1rem 0.2rem;
     width: auto;
     display: flex;
     flex-wrap: wrap;
@@ -551,7 +551,7 @@ font-family: 'Righteous', cursive; */
     margin: 0.4rem;
   }
   #mid-section .card {
-    width: 24%;
+    width: 30%;
     box-shadow: 4px 4px 100px rgba(41, 40, 40, 0.226);
     text-shadow: none;
   }
