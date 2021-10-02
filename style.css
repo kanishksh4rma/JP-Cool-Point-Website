@@ -443,6 +443,7 @@ font-family: 'Righteous', cursive; */
 /* Footer */
 
 .footer{
+  margin-top: 2.4rem;
 height: 20vh;
 width: 100%;
 background-color: skyblue;
