@@ -18,7 +18,7 @@ font-family: 'Righteous', cursive; */
   background: url("./ASSETS/page\ 1.png");
   /* background-size: cover; */
   background-repeat: no-repeat;
-  background-size: 100vw 120vh;
+  background-size: 100vw 100vh;
 }
 .navbar {
   width: 100%;
@@ -247,7 +247,7 @@ font-family: 'Righteous', cursive; */
   align-items: center;
 }
 .page-3-container .left-box {
-  height: 80vh;
+  height: 77vh;
   width: 40vw;
   border: none;
   border-radius: 60px;
@@ -262,7 +262,7 @@ font-family: 'Righteous', cursive; */
   -o-border-radius: 60px;
 }
 .page-3-container .right-box {
-  height: 100vh;
+  height: auto;
   width: 40vw;
   display: flex;
   color: white;
@@ -444,7 +444,7 @@ font-family: 'Righteous', cursive; */
 /* Footer */
 
 .footer{
-  margin-top: 2.4rem;
+  /* margin-top: 1rem; */
 height: 20vh;
 width: 100%;
 background-color: skyblue;
@@ -490,11 +490,17 @@ align-items: center;
     gap: 1rem;
   }
   .front-page {
+    overflow: hidden;
     height: 100vh;
     background: linear-gradient(to bottom right, rgb(102, 101, 101), grey);
     /* background-size: cover; */
     background-repeat: no-repeat;
     background-size: 100vw 76vh;
+  }
+  .first-page{
+    overflow: hidden;
+
+    height: 100vh;
   }
   .first-page .search {
     width: 80%;
@@ -528,7 +534,7 @@ align-items: center;
   }
   .mid-section .card {
     width: 20%;
-    box-shadow: 10px 10px 240px rgba(41, 40, 40, 0.705);
+    box-shadow: 4px 4px 240px rgba(41, 40, 40, 0.705);
     text-shadow: none;
   }
 .page-2{
@@ -567,11 +573,11 @@ align-items: center;
     height: 100%;
   }
 .page-3{
-  margin: 4rem 0rem;
+  margin: 2rem 0rem;
 }
   .page-3-container{
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
   }
   .page-3-container .left-box{
     margin: 0rem 2rem;
@@ -611,6 +617,9 @@ font-size: 1.2rem;
 }
 .page-3-container .right-box textarea {
   width: auto;
+}
+.footer{
+  /* margin-top: 2.5rem; */
 }
 
 }
