@@ -32,6 +32,7 @@ font-family: 'Righteous', cursive; */
   align-items: center;
   gap: 3rem;
 }
+
 .navbar .n-container h2 {
   font-family: var(--curvy-font);
 }
@@ -56,8 +57,8 @@ font-family: 'Righteous', cursive; */
   align-items: center;
 }
 .first-page h1 {
-  padding-top: 3%;
-  font-size: 4rem;
+  padding-top: clamp(1%, 1.4%, 3%);
+  font-size: clamp(0.8rem, 2rem, 4rem);
 }
 .first-page .search {
   background-color: rgba(255, 249, 249, 0.72);
@@ -198,8 +199,7 @@ font-family: 'Righteous', cursive; */
 }
 .page-2-container .right-box h2 {
   padding: 0rem 3.2rem;
-
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem,2.5rem,3.5rem);
   width: 35vw;
   font-weight: 600;
 }
@@ -436,4 +436,95 @@ font-family: 'Righteous', cursive; */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    overflow: hidden;
+    max-width: 100vw;
+  }
+  .navbar .n-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0rem;
+    gap: 1rem;
+    max-width: 100vw;
+
+    /* color: red; */
+  }
+  .navbar .n-container ul {
+    justify-content: space-around;
+    padding-left: 0rem;
+    gap: 1rem;
+  }
+  .front-page {
+    height: 76vh;
+    background: linear-gradient(to bottom right, rgb(102, 101, 101), grey);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-size: 100vw 76vh;
+  }
+  .first-page .search {
+    width: 80%;
+    margin-top: 3.5%;
+  }
+  .cursor {
+    display: none;
+  }
+
+  .arrow img {
+    height: 70%;
+    width: 70%;
+  }
+  .first-page h1 {
+    font-size: 3rem;
+  }
+
+  .mid-section {
+    height: auto;
+    margin: 1rem 2rem;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 1%; */
+  }
+  .mid-section > * {
+    flex: 0 1 33%;
+    margin: 0.4rem;
+  }
+  .mid-section .card {
+    width: 20%;
+  }
+
+  .page-2 .page-2-container {
+    flex-direction: column;
+  }
+  .page-2 .page-2-container .left-box {
+    width: 100%;
+    height: auto;
+  }
+  .page-2 .page-2-container .right-box {
+    width: 100%;
+    height: 40vh;
+    border-radius: 40px;
+    padding: 4rem 0rem;
+    justify-content: space-evenly;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+  .page-2-container .right-box h2{
+    padding: 0rem;
+    margin: 0;
+    font-size: 1.5rem;
+    width: 65vw;
+  }
+  
+  .page-2-container .left-box svg {
+    width: 80%;
+    height: 80%;
+  }
 }
